@@ -1,0 +1,998 @@
+/*
+Theme Name: Studiokiss
+Author: Влад Теус
+*/
+
+html{
+  box-sizing: border-box;
+}
+
+*, *::after, *::before{
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body{
+  width: 100%;
+  height: 100%;
+}
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+  font-style: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  overflow-x: hidden;
+}
+
+/* Хедер */
+
+.header{
+  background-color: wheat;
+}
+
+/*.header-main{
+  background-color: transparent;
+  z-index: 5;
+  position: absolute;
+  left: 0;
+  right: 0;
+} */
+
+.wrapper{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.container{
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header__upper{
+  background-color: pink;
+  padding-top: 10px;
+  margin: 0 -10px;
+  display: flex;
+  align-items: flex-end;
+  align-self: auto;
+  justify-content: space-between;
+}
+
+.contact__list{
+  display: flex;
+  gap: 15px;
+}
+
+.contact__list-logo{
+  position: relative;
+  top: -5px;
+  left: 250px;
+}
+
+.contact__list-text{
+  position: relative;
+  top: -10px;
+  left: 248px;
+}
+
+.header__inner{
+  padding-top: 10px;
+  padding-bottom: 45px;
+  display: flex;
+  align-items: flex-end;
+  align-self: auto;
+  justify-content: space-between;
+}
+
+.logo{
+  position: relative;
+  left: 248px;
+  top: 27px;
+}
+
+.menu{
+  text-align: center;
+}
+
+.menu__list{
+  position: relative;
+  top: 15px;
+  display: flex;
+  left: -30px;
+  gap: 30px;
+}
+
+.menu__list-link{
+  color: black;
+  font-weight: 700;
+}
+
+.social__list{
+  position: relative;
+  top: 20px;
+  left: -300px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Футер */
+
+.footer{
+  background-color: black;
+  padding: 30px 0 32px;
+  color: white;
+  height: 175px;
+}
+
+.footer__menu{
+  display: flex;
+  margin-bottom: -95px;
+  justify-content: flex-end;
+}
+
+.footer__menu-list{
+  position: relative;
+  display: flex;
+  max-width: 250px;
+  top: 80px;
+  left: -300px;
+  gap: 10px;
+}
+
+.footer__menu-item{
+  padding-top: 20px;
+}
+
+.footer__copy{
+  max-width: 560px;
+}
+
+.footer__copy-text{
+  position: relative;
+  display: flex;
+  top: 121px;
+  left: 248px;
+}
+
+.footer__social{
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: flex-end;
+}
+
+.footer__social-list{
+  position: relative;
+  left: -300px;
+  top: 20px;
+  max-width: 250px;
+}
+
+/* Главная */
+
+.main{
+  flex-grow: 1;
+}
+
+/* Форма "Заказать Мероприятие" */
+
+.main__form{
+  padding: 40px;
+  width: 1920px;
+  height: 850px;
+  margin: 0 -10px;
+  background-color: floralwhite;
+}
+
+/* Слайдер работ */
+
+.slider__text{
+  text-align: center;
+  padding: 40px;
+  width: 1920px;
+  margin: 0 -10px;
+  background-color: azure;
+}
+
+.gallery__swiper{
+  padding: 40px;
+  position: relative;
+  width: 1920px;
+  margin: 0 -10px;
+  background-color: azure;
+  padding-left: 350px;
+}
+
+.swiper-slide{
+  height: 800px;
+  position: inherit;
+}
+
+.swiper-wrapper{
+  padding-bottom: 40px;
+}
+
+.swiper-pagination{
+  padding-bottom: 40px;
+}
+
+/* Наши услуги */
+
+.main__services-name{
+  text-align: center;
+  padding: 40px;
+  width: 1920px;
+  margin: 0 -10px;
+  background-color: snow;
+}
+
+.services__cat{
+  display: flex;
+  position: relative;
+  padding-bottom: 40px;
+  padding-left: 800px;
+  align-items: flex-end;
+  align-self: auto;
+  width: 1920px;
+  margin: 0 -10px;
+  background-color: snow;
+}
+
+.services__cat-menu{
+  text-align: center;
+}
+
+.services__cat-list{
+  position: relative;
+  top: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+/* Аренда студии */
+
+.rent__block{
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  align-self: auto;
+  justify-content: space-between;
+  width: 1920px;
+  margin: 0 -10px;
+  background-color: snow;
+}
+
+.rent__white{
+  position: relative;
+  padding-top: 40px;
+  left: 248px;
+}
+
+.rent__white-text{
+  position: relative;
+  left: 80px;
+  top: -200px;
+  color: white;
+  border: 1px white solid;
+  text-align: left; 
+  width: 200px; 
+  height: 150px; 
+  padding-top: 10px; 
+  padding-left: 38px; 
+  font-weight: 600; 
+  font-size: 300%;
+  opacity: 1;
+}
+
+.rent__white-cost-text{
+  position: relative;
+  top: -350px;
+  left: 80px;
+  color: white;
+  text-align: left; 
+  width: 200px; 
+  height: 150px; 
+  padding-top: 30px; 
+  padding-left: 10px; 
+  font-weight: 600; 
+  font-size: 150%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.rent__white-name:not(:hover) .rent__white-cost-text{
+  opacity: 0;
+  transition: all 0.1s ease-in-out;
+}
+
+.rent__white-name:hover .rent__white-text{
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.rent__white-desc{
+  position: relative;
+  width: 350px;
+  text-align: left;
+  top: -300px;
+  line-height: 25px;
+}
+
+.rent__loft{
+  position: relative;
+  left: -10px;
+  top: -130px;
+  padding-top: 40px;
+}
+
+.rent__loft-text{
+  position: relative;
+  left: 90px;
+  top: -200px;
+  color: white;
+  border: 1px white solid;
+  text-align: left; 
+  width: 150px; 
+  height: 130px; 
+  padding-left: 30px; 
+  font-weight: 600; 
+  font-size: 300%;
+  opacity: 1;
+}
+
+.rent__loft-cost-text{
+  position: relative;
+  top: -330px;
+  left: 80px;
+  color: white;
+  text-align: left; 
+  width: 200px; 
+  height: 150px; 
+  padding-top: 30px; 
+  padding-left: 10px; 
+  font-weight: 600; 
+  font-size: 150%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.rent__loft-name:not(:hover) .rent__loft-cost-text{
+  opacity: 0;
+  transition: all 0.1s ease-in-out;
+}
+
+.rent__loft-name:hover .rent__loft-text{
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.rent__loft-desc{
+  position: relative;
+  width: 350px;
+  text-align: left;
+  top: -300px;
+  line-height: 25px;
+  padding-top: 15px;
+}
+
+.rent__grim{
+  position: relative;
+  right: 300px;
+  top: -230px;
+  padding-top: 40px;
+}
+
+.rent__grim-text{
+  position: relative;
+  left: 40px;
+  top: -200px;
+  color: white;
+  border: 1px white solid;
+  text-align: left; 
+  width: 270px; 
+  height: 130px; 
+  padding-left: 20px; 
+  font-weight: 600; 
+  font-size: 300%;
+  opacity: 1;
+}
+
+.rent__grim-cost-text{
+  position: relative;
+  top: -330px;
+  left: 80px;
+  color: white;
+  text-align: left; 
+  width: 200px; 
+  height: 150px; 
+  padding-top: 30px; 
+  padding-left: 10px; 
+  font-weight: 600; 
+  font-size: 150%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.rent__grim-name:not(:hover) .rent__grim-cost-text{
+  opacity: 0;
+  transition: all 0.1s ease-in-out;
+}
+
+.rent__grim-name:hover .rent__grim-text{
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.rent__grim-desc{
+  position: relative;
+  width: 350px;
+  text-align: left;
+  top: -300px;
+  line-height: 25px;
+  padding-top: 15px;
+}
+
+/* Фотоуслуги */
+
+.service__swiper{
+  padding: 40px;
+  position: relative;
+  width: 1920px;
+  height: 650px;
+  margin: 0 -10px;
+  background-color: navajowhite;
+  padding-left: 590px;
+}
+
+.ind-text{
+  position: relative;
+  left: 100px;
+  top: -240px;
+  color: white;
+  border: 1px white solid;
+  text-align: left; 
+  width: 430px; 
+  height: 70px;
+  padding-left: 20px; 
+  font-weight: 600; 
+  font-size: 300%;
+  opacity: 1;
+}
+
+.ind-cost-text{
+  position: relative;
+  left: 65px;
+  top: -375px;
+  color: white;
+  text-align: left; 
+  width: 500px; 
+  height: 200px;
+  padding-left: 20px; 
+  font-weight: 600; 
+  font-size: 300%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.ind-name:not(:hover) .ind-cost-text{
+  opacity: 0;
+  transition: all 0.1s ease-in-out;
+}
+
+.ind-name:hover .ind-text{
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.ind-desc{
+  position: relative;
+  width: 660px;
+  text-align: left;
+  top: -270px;
+  line-height: 25px;
+  padding-top: 15px;
+}
+
+.sem-text{
+  position: relative;
+  left: 200px;
+  top: -240px;
+  color: white;
+  border: 1px white solid;
+  text-align: left; 
+  width: 250px; 
+  height: 70px;
+  padding-left: 5px; 
+  font-weight: 600; 
+  font-size: 300%;
+  opacity: 1;
+}
+
+.sem-cost-text{
+  position: relative;
+  left: 65px;
+  top: -375px;
+  color: white;
+  text-align: left; 
+  width: 500px; 
+  height: 200px;
+  padding-left: 20px; 
+  font-weight: 600; 
+  font-size: 300%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.sem-name:not(:hover) .sem-cost-text{
+  opacity: 0;
+  transition: all 0.1s ease-in-out;
+}
+
+.sem-name:hover .sem-text{
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.sem-desc{
+  position: relative;
+  width: 660px;
+  text-align: left;
+  top: -270px;
+  line-height: 25px;
+  padding-top: 15px;
+}
+
+.ber-text{
+  position: relative;
+  left: 200px;
+  top: -240px;
+  color: white;
+  border: 1px white solid;
+  text-align: left; 
+  width: 300px; 
+  height: 70px;
+  padding-left: 5px; 
+  font-weight: 600; 
+  font-size: 300%;
+  text-align: center;
+  opacity: 1;
+}
+
+.ber-cost-text{
+  position: relative;
+  left: 65px;
+  top: -375px;
+  color: white;
+  text-align: left; 
+  width: 500px; 
+  height: 200px;
+  padding-left: 20px; 
+  font-weight: 600; 
+  font-size: 300%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.ber-name:not(:hover) .ber-cost-text{
+  opacity: 0;
+  transition: all 0.1s ease-in-out;
+}
+
+.ber-name:hover .ber-text{
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.ber-desc{
+  position: relative;
+  width: 660px;
+  text-align: left;
+  top: -270px;
+  line-height: 25px;
+  padding-top: 15px;
+}
+
+.sv-text{
+  position: relative;
+  left: 200px;
+  top: -240px;
+  color: white;
+  border: 1px white solid;
+  text-align: left; 
+  width: 300px; 
+  height: 70px;
+  padding-left: 5px; 
+  font-weight: 600; 
+  font-size: 300%;
+  text-align: center;
+  opacity: 1;
+}
+
+.sv-cost-text{
+  position: relative;
+  left: 65px;
+  top: -375px;
+  color: white;
+  text-align: left; 
+  width: 500px; 
+  height: 200px;
+  padding-left: 20px; 
+  font-weight: 600; 
+  font-size: 300%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.sv-name:not(:hover) .sv-cost-text{
+  opacity: 0;
+  transition: all 0.1s ease-in-out;
+}
+
+.sv-name:hover .sv-text{
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.sv-desc{
+  position: relative;
+  width: 660px;
+  text-align: left;
+  top: -270px;
+  line-height: 25px;
+  padding-top: 15px;
+}
+
+.lav-text{
+  position: relative;
+  left: 200px;
+  top: -240px;
+  color: white;
+  border: 1px white solid;
+  text-align: left; 
+  width: 300px; 
+  height: 70px;
+  padding-left: 5px; 
+  font-weight: 600; 
+  font-size: 300%;
+  text-align: center;
+  opacity: 1;
+}
+
+.lav-cost-text{
+  position: relative;
+  left: 65px;
+  top: -375px;
+  color: white;
+  text-align: left; 
+  width: 500px; 
+  height: 200px;
+  padding-left: 20px; 
+  font-weight: 600; 
+  font-size: 300%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.lav-name:not(:hover) .lav-cost-text{
+  opacity: 0;
+  transition: all 0.1s ease-in-out;
+}
+
+.lav-name:hover .lav-text{
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.lav-desc{
+  position: relative;
+  width: 660px;
+  text-align: left;
+  top: -270px;
+  line-height: 25px;
+  padding-top: 15px;
+}
+
+.rep-text{
+  position: relative;
+  left: 200px;
+  top: -240px;
+  color: white;
+  border: 1px white solid;
+  text-align: left; 
+  width: 300px; 
+  height: 70px;
+  padding-left: 5px; 
+  font-weight: 600; 
+  font-size: 300%;
+  text-align: center;
+  opacity: 1;
+}
+
+.rep-cost-text{
+  position: relative;
+  left: 65px;
+  top: -375px;
+  color: white;
+  text-align: left; 
+  width: 500px; 
+  height: 200px;
+  padding-left: 20px; 
+  font-weight: 600; 
+  font-size: 300%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.rep-name:not(:hover) .rep-cost-text{
+  opacity: 0;
+  transition: all 0.1s ease-in-out;
+}
+
+.rep-name:hover .rep-text{
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.rep-desc{
+  position: relative;
+  width: 660px;
+  text-align: left;
+  top: -270px;
+  line-height: 25px;
+  padding-top: 15px;
+}
+
+.biznes-text{
+  position: relative;
+  left: 170px;
+  top: -270px;
+  color: white;
+  border: 1px white solid;
+  text-align: left; 
+  width: 300px; 
+  height: 130px;
+  padding-left: 5px; 
+  font-weight: 600; 
+  font-size: 300%;
+  text-align: center;
+  opacity: 1;
+}
+
+.biznes-cost-text{
+  position: relative;
+  left: 65px;
+  top: -430px;
+  color: white;
+  text-align: left; 
+  width: 500px; 
+  height: 200px;
+  padding-left: 20px; 
+  font-weight: 600; 
+  font-size: 300%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.biznes-name:not(:hover) .biznes-cost-text{
+  opacity: 0;
+  transition: all 0.1s ease-in-out;
+}
+
+.biznes-name:hover .biznes-text{
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.biznes-desc{
+  position: relative;
+  width: 660px;
+  text-align: left;
+  top: -310px;
+  line-height: 25px;
+  padding-top: 15px;
+}
+
+.service__swiper-pagination{
+  position: relative;
+  top: -120px;
+}
+
+
+/* Интерьерные студии */
+
+.main__studios-name{
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  width: 1920px;
+  margin: 0 -10px;
+  background-color: azure;
+}
+
+.main__studios-list{
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  align-self: auto;
+  justify-content: space-between;
+  width: 1920px;
+  margin: 0 -10px;
+  background-color: azure;
+}
+
+/* О нас */
+/* Наша команда */
+
+.about__team-name{
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 1920px;
+  margin: 0 -10px;
+  background-color: thistle;
+}
+
+.about__team-list{
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  align-self: auto;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
+  width: 1920px;
+  margin: 0 -10px;
+  background-color: thistle;
+}
+
+.about__team-namep{
+  text-align: center;
+  padding: 10px;
+}
+
+.about__team-post{
+  text-transform: uppercase;
+  text-align: center;
+  color: honeydew;
+  font-size: 120%;
+}
+
+.about__team-info{
+  width: 350px;
+  padding-bottom: 40px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.about__team-nsh{
+  position: relative;
+  top: -30px;
+}
+
+.about__team-am{
+  position: relative;
+  top: 15px;
+}
+
+/* Контакты */
+/* Адрес, телефон, почта */
+
+.contacts__info-main{
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.contacts__info{
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  align-self: auto;
+  justify-content: center;
+}
+
+.contacts__info-address{
+  background-color: azure;
+  background-size: contain;
+  position: relative;
+  width: 640px;
+  height: 300px;
+  left: -10px;
+  padding: 5%;
+}
+
+.contacts__info-phone{
+  background-color: aliceblue;
+  background-size: contain;
+  position: inherit;
+  width: 640px;
+  height: 300px;
+  left: 0px;
+  padding: 5%;
+}
+
+.contacts__info-mail{
+  background-color: antiquewhite;
+  background-size: contain;
+  position: inherit;
+  width: 640px;
+  height: 300px;
+  right: -10px;
+  padding: 5%;
+}
+
+.contacts__info h3, p{
+  text-align: center;
+}
+
+/* Социальные сети */
+
+.contacts__social{
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  align-self: auto;
+  justify-content: center;
+}
+
+.contacts__social h3, p{
+  text-align: center;
+}
+
+.contacts__social-text{
+  text-align: center;
+  padding: 40px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 2;
+}
+
+.contacts__social-whatsapp{
+  background-color: gainsboro;
+  background-size: contain;
+  position: inherit;
+  width: 960px;
+  height: 300px;
+  left: 0px;
+  padding: 5%;
+}
+
+.contacts__social-whatsapp img{
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 330px;
+}
+
+.contacts__social-inst{
+  background-color: ghostwhite;
+  background-size: contain;
+  position: inherit;
+  width: 960px;
+  height: 300px;
+  right: -10px;
+  padding: 5%;
+}
+
+.contacts__social-inst img{
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 380px;
+}
